@@ -1,6 +1,7 @@
 import {React} from 'react'
 import './App.css';
 import Navbar from '../src/components/Navbar.jsx'
+import Hero from './components/Hero.jsx';
 function App() {
  
 
@@ -17,10 +18,13 @@ function App() {
     {
       <div className= "relative z-10">
        <Navbar></Navbar>
+       <Hero></Hero>
       </div>
+     
     }
   </div>
   )
 }
 
 export default App
+
