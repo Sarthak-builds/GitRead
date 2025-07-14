@@ -2,6 +2,9 @@ import {React} from 'react'
 import './App.css';
 import Navbar from '../src/components/Navbar.jsx'
 import Hero from './components/Hero.jsx';
+import InputBox from './components/InputBox.jsx';
+import GitRead from './components/gitRead.jsx';
+
 function App() {
  
 
@@ -16,9 +19,11 @@ function App() {
     />
   
     {
-      <div className= "relative z-10">
+      <div className= "relative z-10 flex flex-col justify-center items-center ">
        <Navbar></Navbar>
        <Hero></Hero>
+       <InputBox></InputBox>
+       <GitRead></GitRead>
       </div>
      
     }
