@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 const apikey = import.meta.env.VITE_PAGEINSIGHTS_API_KEY;
-console
+
 
 export const usePageSpeed = create((set)=>({
     data:{},
@@ -11,7 +11,7 @@ export const usePageSpeed = create((set)=>({
             error:null
         });
         try {
-          const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURI(URL)}&key=${apikey}&strategy=desktop&category=performance&category=seo`;
+          const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURI(URL)}&key=${apikey}&category=ACCESSIBILITY&category=BEST_PRACTICES&category=PERFORMANCE&category=PWA&category=SEO`;
           const response = await fetch(apiUrl);
           if (!response.ok) {
             throw new Error(`HTTP error ! Status: ${response.status}`);

@@ -3,7 +3,9 @@ import './App.css';
 import Navbar from '../src/components/Navbar.jsx'
 import Hero from './components/Hero.jsx';
 import InputBox from './components/InputBox.jsx';
-import GitRead from './components/gitRead.jsx';
+
+import MetricGrid from './components/Dashboard/MetricGrid.jsx';
+import MetricHeading from './components/Dashboard/MertricHeading.jsx';
 
 function App() {
  
@@ -23,7 +25,8 @@ function App() {
        <Navbar></Navbar>
        <Hero></Hero>
        <InputBox></InputBox>
-       <GitRead></GitRead>
+      <MetricHeading></MetricHeading>
+      <MetricGrid></MetricGrid>
       </div>
      
     }
