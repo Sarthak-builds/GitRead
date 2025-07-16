@@ -3,9 +3,11 @@ import './App.css';
 import Navbar from '../src/components/Navbar.jsx'
 import Hero from './components/Hero.jsx';
 import InputBox from './components/InputBox.jsx';
+import Screenshot from './components/Dashboard/screenshot.jsx';
 
-import MetricGrid from './components/Dashboard/MetricGrid.jsx';
 import MetricHeading from './components/Dashboard/MertricHeading.jsx';
+import ScoreBoard from './components/Dashboard/ScoreBoard.jsx';
+
 
 function App() {
  
@@ -26,7 +28,8 @@ function App() {
        <Hero></Hero>
        <InputBox></InputBox>
       <MetricHeading></MetricHeading>
-      <MetricGrid></MetricGrid>
+     <Screenshot></Screenshot>
+     <ScoreBoard></ScoreBoard>
       </div>
      
     }
