@@ -9,7 +9,7 @@ const {data} = usePageSpeed();
   }
 
     return (
-        <div className="w-full h-fit px-40 gap-7 flex py-5">
+        <div className="w-full h-fit px-60 gap-7 flex py-5 justify-center">
             <ScoreCard category="Search Engine Optimization" scoreData={data.lighthouseResult.categories.seo.score*100} about="Checks for basic search engine optimization principles to ensure your page is discoverable and understood by search engines." goodScore="90-100"></ScoreCard>
             <ScoreCard category="Accessibility" scoreData={data.lighthouseResult.categories.accessibility.score*100}
             about="Assesses if your website is usable by everyone, including people with disabilities, by checking for common accessibility issues." goodScore="90-100"></ScoreCard>

@@ -7,10 +7,10 @@ if(!data || !data.lighthouseResult) {
     return <div className="w-full bg-blue-400">...is loading</div>
 }
     return (
-       <div className="text-white  w-full flex flex-col px-40 py-5 h-fit gap-10">
+       <div className="text-white  w-full flex flex-col px-40 py-5 h-fit flex-wrap">
        
-        <div className="flex gap-2 h-full">
-          <ScoreCard category="Time to First Byte" scoreData={data.lighthouseResult.audits['server-response-time'].numericValue}
+        <div className="flex gap-8 h-full flex-wrap">
+          <ScoreCard category="Time to First Byte" scoreData={data.lighthouseResult.audits['server-response-time'].numericValue + ` ms`}
           about="he time from the initial request of a page until the first byte of the response is received by the browser. It includes DNS lookup, TCP connection, TLS negotiation, and the server's processing time to generate and send the response." goodScore="≤ 800 milliseconds"></ScoreCard>
 
           <ScoreCard category="First Contentful Paint" scoreData={data.lighthouseResult.audits['first-contentful-paint'].displayValue}

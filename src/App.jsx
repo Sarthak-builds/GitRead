@@ -25,7 +25,7 @@ function App() {
     />
   
     {
-      <div className= "relative z-10 flex flex-col justify-center items-center ">
+      <div className= "relative z-10 flex flex-col justify-center items-center overflow-x-hidden ">
        <Navbar></Navbar>
        <Hero></Hero>
        <InputBox></InputBox>

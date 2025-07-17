@@ -8,17 +8,17 @@ if (!data || !data.lighthouseResult || !data.lighthouseResult.categories) {
   }
 
     return (
-        <div className="flex gap-3 w-full px-40 h-fit pt-10 items-center">
+        <div className="flex gap-3 w-full px-40 h-80 pt-10 items-center">
         <ScoreCard category="Performance" scoreData={data.lighthouseResult.categories.performance.score*100}
         about="Measures how fast your page loads and becomes interactive, reflecting the user's perceived speed."
         goodScore="90-100"
 
         ></ScoreCard>
-          <div className="w-fit h-60 overflow-hidden shadow-md shadow-green-500/20 rounded-lg">
+          <div className="w-fit h-full overflow-hidden shadow-md shadow-green-500/20 rounded-lg">
              <img 
             src={`${data.lighthouseResult.fullPageScreenshot?.screenshot?.data}`} 
             alt="Website Screenshot" 
-            className="w-300 h-full  rounded-xl object-cover" 
+            className="w-300 h-full  rounded-xl object-cover object-top" 
           />
           </div>
 

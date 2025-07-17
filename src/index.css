@@ -1,1 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Jersey+15&family=Space+Grotesk:wght@300..700&display=swap');
+
 @import "tailwindcss";
+ 
+@theme {
+    --font-pixel:"Jersey 15", monospace;
+    --font-grotesk:"Space Grotesk", sans-serif;
+    --font-doto: "Doto", sans-serif;
+}
