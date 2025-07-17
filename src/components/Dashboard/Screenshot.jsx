@@ -11,6 +11,8 @@ if (!data || !data.lighthouseResult || !data.lighthouseResult.categories) {
         <div className="flex gap-3 w-full px-40 h-fit pt-10 items-center">
         <ScoreCard category="Performance" scoreData={data.lighthouseResult.categories.performance.score*100}
         about="Measures how fast your page loads and becomes interactive, reflecting the user's perceived speed."
+        goodScore="90-100"
+
         ></ScoreCard>
           <div className="w-fit h-60 overflow-hidden shadow-md shadow-green-500/20 rounded-lg">
              <img 
