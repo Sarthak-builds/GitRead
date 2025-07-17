@@ -7,6 +7,8 @@ import Screenshot from './components/Dashboard/screenshot.jsx';
 
 import MetricHeading from './components/Dashboard/MertricHeading.jsx';
 import ScoreBoard from './components/Dashboard/ScoreBoard.jsx';
+import WebVitals from './components/Dashboard/WebVitals.jsx'
+import LabVitals from './components/Dashboard/LabVitals.jsx';
 
 
 function App() {
@@ -30,6 +32,10 @@ function App() {
       <MetricHeading></MetricHeading>
      <Screenshot></Screenshot>
      <ScoreBoard></ScoreBoard>
+     <MetricHeading></MetricHeading>
+     <WebVitals></WebVitals>
+     <MetricHeading></MetricHeading>
+     <LabVitals></LabVitals>
       </div>
      
     }

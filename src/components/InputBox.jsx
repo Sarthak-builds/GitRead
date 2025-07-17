@@ -15,7 +15,7 @@ useEffect(()=>{
   console.log(data);
 },[data])
     return (
-        <div className="w-4xl border-1 h-fit rounded-xl text-green-600 flex flex-col px-12 py-4 justify-center items-center gap-4 text-xl ">
+        <div className="w-4xl border-1 h-fit rounded-xl text-green-600 flex flex-col px-12 py-4 justify-center items-center gap-4 text-xl mb-20 ">
            
               
                <button  onClick={handleSubmit}>Submit</button>
