@@ -3,7 +3,7 @@ import ScoreBoard from "./Dashboard/ScoreBoard";
 import WebVitals from "./Dashboard/WebVitals";
 import LabVitals from "./Dashboard/LabVitals";
 import {motion} from 'motion/react'
-import Screenshot from "./Dashboard/screenshot";
+import Screenshot from "./Dashboard/Screenshot";
 function Display() {
 
 
