@@ -5,7 +5,7 @@ function Navbar() {
 
 
     return (
-        <div className="h-15 w-full  px-7 sm:px-35 py-10 mb-20 flex justify-between items-center text-xl text-white font-doto">
+        <div className="h-15 w-full  px-7 sm:px-12 md:px-20 xl:px-35 py-10 mb-20 flex justify-between items-center text-xl text-white font-doto">
           <div className="text-lg sm:text-3xl font-bold ">Web<strong className="text-green-400">Lens</strong></div>
           <div className="flex  gap-2  inset-shadow-sm inset-shadow-green-500/50  px-2 py-1  rounded-xl scale-75 sm:scale-100">
           <a href="https://github.com/Sarthak-builds/WebLens">
