@@ -6,7 +6,7 @@ import InputBox from './components/InputBox.jsx';
 import Display from './components/Display.jsx';
 import { usePageSpeed } from './Services/pageSpeedStore.js';
 import LoaderAnimation from './components/Loader.jsx';
-
+import Footer from './components/foooter.jsx';
 
 function App() {
  
@@ -27,6 +27,7 @@ const {loading} = usePageSpeed();
        <Hero></Hero>
        <InputBox></InputBox>
      {loading? <LoaderAnimation></LoaderAnimation>: <Display></Display>}
+     <Footer></Footer>
       </div>
      
     }
