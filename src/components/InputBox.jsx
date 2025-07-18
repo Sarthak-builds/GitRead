@@ -32,7 +32,7 @@ const handleInputChange= (e) => {
           }
         }, [data, loading, error]);
     return (
-        <motion.form onSubmit={handleSubmit} className="w-full flex justify-center items-center opacity-0" transition={{delay:0.5, duration:1}} whileInView={{opacity:1}}>
+        <motion.form onSubmit={handleSubmit} className="w-full flex justify-center items-center opacity-0" transition={{delay:0.3, duration:0.5}} whileInView={{opacity:1}}>
         
         <div className="w-4xl border-1 h-fit rounded-xl text-green-600 flex flex-col px-12 py-4 justify-center items-center gap-4 text-xl mb-20 font-grotesk bg-green-600/10" >
             <label htmlFor="input" className="">Enter a Website URL</label>

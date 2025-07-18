@@ -3,12 +3,13 @@ import Screenshot from "./Dashboard/screenshot";
 import ScoreBoard from "./Dashboard/ScoreBoard";
 import WebVitals from "./Dashboard/WebVitals";
 import LabVitals from "./Dashboard/LabVitals";
+import {motion} from 'motion/react'
 function Display() {
 
 
 
     return (
-        <>
+       <>
          <MetricHeading heading="Overall Health Scorecard" description=" The 'Overall Health Scorecard' serves as the executive summary of your website's performance and quality. It provides an immediate, high-level overview, allowing developers and stakeholders to grasp the general health of the page at a single glance without diving into granular details."></MetricHeading>
      <Screenshot></Screenshot>
      <ScoreBoard></ScoreBoard>

@@ -7,7 +7,7 @@ if(!data || !data.lighthouseResult) {
     return <></>;
 }
     return (
-       <div className="text-white  w-full flex flex-col px-40 py-5 h-fit flex-wrap">
+       <div className="text-white  w-full flex flex-col px-40 py-5 h-fit flex-wrap font-grotesk">
        
         <div className="flex gap-8 h-full flex-wrap">
           <ScoreCard category="Time to First Byte" scoreData={data.lighthouseResult.audits['server-response-time'].numericValue + ` ms`}
