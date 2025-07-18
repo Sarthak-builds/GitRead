@@ -11,7 +11,7 @@ if(!data || !data.lighthouseResult) {
        
         <div className="flex sm:gap-6 md:gap-8 h-full flex-wrap justify-center items-center">
           <ScoreCard category="Time to First Byte" scoreData={data.lighthouseResult.audits['server-response-time'].numericValue + ` ms`}
-          about="he time from the initial request of a page until the first byte of the response is received by the browser. It includes DNS lookup, TCP connection, TLS negotiation, and the server's processing time to generate and send the response." goodScore="≤ 800 milliseconds"></ScoreCard>
+          about="he time from the initial request of a page until the first byte of the response is received by the browser. It includes DNS lookup, TCP connection, TLS negotiation, and the server's processing time to generate and send the response." goodScore="≤ 200 milliseconds"></ScoreCard>
 
           <ScoreCard category="First Contentful Paint" scoreData={data.lighthouseResult.audits['first-contentful-paint'].displayValue}
           about="The time from when the page starts loading until any part of the page's content is rendered on the screen. This could be text, images, non-white <canvas> elements, or SVGs." goodScore="≤ 1.8 seconds"></ScoreCard>
