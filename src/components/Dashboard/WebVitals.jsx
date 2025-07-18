@@ -4,7 +4,7 @@ import { usePageSpeed } from "../../Services/pageSpeedStore";
 function WebVitals() {
 const { data } = usePageSpeed();
 if(!data || !data.loadingExperience){
-    return <div className="w-full bg-blue-300">...loading</div>
+    return <></>;
 }
     return (
        <div className="text-white  w-full flex flex-col px-40 py-5 gap-4 h-fit">

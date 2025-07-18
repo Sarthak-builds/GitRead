@@ -4,7 +4,7 @@ import { usePageSpeed } from "../../Services/pageSpeedStore";
 function LabVitals() {
 const { data } = usePageSpeed();
 if(!data || !data.lighthouseResult) {
-    return <div className="w-full bg-blue-400">...is loading</div>
+    return <></>;
 }
     return (
        <div className="text-white  w-full flex flex-col px-40 py-5 h-fit flex-wrap">

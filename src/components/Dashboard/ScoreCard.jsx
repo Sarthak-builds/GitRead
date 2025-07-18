@@ -1,6 +1,6 @@
 function ScoreCard({category, scoreData, about, goodScore}) {
  if (!scoreData) {
-    return <div className="bg-red-700 w-full h-full">Loading data...</div>;
+    return <></>;
   }
 
     return (

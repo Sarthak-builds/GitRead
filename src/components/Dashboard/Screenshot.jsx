@@ -4,7 +4,7 @@ import { usePageSpeed } from "../../Services/pageSpeedStore";
 function Screenshot() {
 const { data } = usePageSpeed();
 if (!data || !data.lighthouseResult || !data.lighthouseResult.categories) {
-    return <div className="bg-red-700 w-full h-full">Loading data...</div>;
+    return <></>;
   }
 
     return (
