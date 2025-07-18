@@ -7,9 +7,9 @@ if(!data || !data.loadingExperience){
     return <></>;
 }
     return (
-       <div className="text-white  w-full flex flex-col px-40 py-5 gap-4 h-fit font-grotesk">
+       <div className="text-white  w-full flex  items-center flex-col justify-center py-5 gap-4 h-fit font-grotesk ">
         <h1 className="text-lg bg-green-400/40 w-fit px-4 py-1 rounded-lg font-grotesk">For the Entire Website </h1>
-        <div className="flex gap-4 h-full rounded-lg py-1 px-2 flex-wrap">
+        <div className="flex gap-4 h-full rounded-lg py-1 px-2 flex-col  sm:flex-wrap sm:flex-row justify-center items-center">
           <ScoreCard category="CLS : Cumulative Layout Shift" scoreData={data.originLoadingExperience.metrics.CUMULATIVE_LAYOUT_SHIFT_SCORE.category}
           about=" CLS measures the visual stability of a webpage. It quantifies the amount of unexpected layout shifts that occur during the entire lifespan of a page. An unexpected layout shift happens when a visible element on the page changes its position (e.g., text moving down, a button appearing and pushing content) without being directly triggered by a user interaction." ></ScoreCard>
           <ScoreCard category="LCP : Largest Contentful Paint" scoreData={data.originLoadingExperience.metrics.LARGEST_CONTENTFUL_PAINT_MS
