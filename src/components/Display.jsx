@@ -1,5 +1,5 @@
 import MetricHeading from "./Dashboard/MertricHeading";
-import Screenshot from "./Dashboard/screenshot";
+import Screenshot from ".components/Dashboard/Screenshot";
 import ScoreBoard from "./Dashboard/ScoreBoard";
 import WebVitals from "./Dashboard/WebVitals";
 import LabVitals from "./Dashboard/LabVitals";
