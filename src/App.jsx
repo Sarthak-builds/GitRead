@@ -5,7 +5,7 @@ import Hero from './components/Hero.jsx';
 import InputBox from './components/InputBox.jsx';
 import Display from './components/Display.jsx';
 import { usePageSpeed } from './Services/pageSpeedStore.js';
-import LoaderAnimation from './components/Loader.jsx';
+import LoaderAnimation from './components/Loader.jsx'
 import Footer from './components/footer.jsx';
 
 function App() {
