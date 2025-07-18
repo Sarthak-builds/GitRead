@@ -11,7 +11,7 @@ function Navbar() {
           <a href="https://github.com/Sarthak-builds/WebLens">
           <Github color="white" size={32} className="hover:bg-green-800 p-1 rounded-lg"/></a>
             <a href="https://x.com/Sarthakbuilds" className="w-8 text-white">
-            <img src="./src/assets/x.png" className="text-white hover:bg-green-800 rounded-lg p-1"></img>
+            <img src="/x.png" className="text-white hover:bg-green-800 rounded-lg p-1"></img>
             {/* <Twitter color="white" size={32} className="hover:bg-green-600 p-1 rounded-lg"/> */}
             </a>
           </div>
