@@ -24,7 +24,7 @@ export const usePageSpeed = create((set)=>({
             loading: false
           })
         } catch (error) {
-             set({error: error.message, loading:false})
+             set({error: `${error.message}Sorry :/ (Status: ${response.status}). Please try again later.`, loading:false})
         }
     }
 }))
