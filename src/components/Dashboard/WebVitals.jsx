@@ -2,9 +2,12 @@ import ScoreCard from "./ScoreCard";
 import { usePageSpeed } from "../../Services/pageSpeedStore";
 
 function WebVitals() {
-const { data } = usePageSpeed();
-if(!data || !data.originloadingExperience){
-    return <></>;
+const { data, url } = usePageSpeed();
+if(!url) {
+  return null;
+}
+if(!data || !data.originLoadingExperience){
+    return <div className="w-full  px-5 sm:px-20 text-center font-grotesk text-red-500 text-sm sm:text-lg">Loading experience metrics are unavailable for this website. Please try another URL or check back later.</div>;
 }
     return (
        <div className="text-white  w-full flex  items-center flex-col justify-center py-5 gap-4 h-fit font-grotesk ">

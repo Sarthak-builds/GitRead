@@ -6,9 +6,11 @@ export const usePageSpeed = create((set)=>({
     data:{},
     loading: false,
     error: null,
+    url:null,
     fetchData : async (URL)=> {
         set({loading:true,
-            error:null
+            error:null,
+            url:URL
         });
         try {
           const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURI(URL)}&key=${apikey}&category=ACCESSIBILITY&category=BEST_PRACTICES&category=PERFORMANCE&category=PWA&category=SEO`;
@@ -21,7 +23,8 @@ export const usePageSpeed = create((set)=>({
           }
           const responseData = await response.json();
           set({data : responseData,
-            loading: false
+            loading: false,
+            url: URL
           })
         } catch (error) {
              set({error: `${error.message}Sorry :/ (Status: ${response.status}). Please try again later.`, loading:false})
