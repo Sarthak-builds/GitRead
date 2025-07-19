@@ -14,7 +14,10 @@ export const usePageSpeed = create((set)=>({
           const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURI(URL)}&key=${apikey}&category=ACCESSIBILITY&category=BEST_PRACTICES&category=PERFORMANCE&category=PWA&category=SEO`;
           const response = await fetch(apiUrl);
           if (!response.ok) {
-            throw new Error(`HTTP error ! Status: ${response.status}`);
+            if (response.status === 429) {
+          throw new Error('Too many requests. Please try again later.');
+        }
+            throw new Error(`Sorry :/ (Status: ${response.status}). Please try again later.`);
           }
           const responseData = await response.json();
           set({data : responseData,

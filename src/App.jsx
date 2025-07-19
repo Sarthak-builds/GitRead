@@ -10,7 +10,7 @@ import Footer from './components/footer.jsx';
 
 function App() {
  
-const {loading} = usePageSpeed();
+const {loading, error} = usePageSpeed();
   return (
  <div className="min-h-screen w-full relative bg-black">
     {/* Arctic Lights Background with Top Glow */}
@@ -26,7 +26,13 @@ const {loading} = usePageSpeed();
        <Navbar></Navbar>
        <Hero></Hero>
        <InputBox></InputBox>
-     {loading? <LoaderAnimation></LoaderAnimation>: <Display></Display>}
+       {error && (
+          <div className="text-red-500 text-center mt-4 font-semibold text-lg bg-black bg-opacity-70 p-4 rounded-lg max-w-md">
+            {error}
+          </div>
+        )}
+     {loading? <LoaderAnimation></LoaderAnimation>: null}
+      {error||loading? null: <Display></Display>}
      <Footer></Footer>
       </div>
      

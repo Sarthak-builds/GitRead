@@ -7,15 +7,14 @@ const { data,loading, error, fetchData} = usePageSpeed();
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    if(!url) {alert('Enter a URL');
-        return;
+    if (!url) {
+      return; 
     }
     if (!url.startsWith('http://') && !url.startsWith('https://')) {
-            alert('Please enter a valid URL starting with http:// or https://');
-            return;
-          }
+      return; 
+    }
    fetchData(url);
-    // fetchData(`https://frontendnation.com/`);
+   
 }
 const handleInputChange= (e) => {
     setUrl(e.target.value)
